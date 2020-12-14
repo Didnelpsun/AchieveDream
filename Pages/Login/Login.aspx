@@ -9,8 +9,13 @@
     <link rel="stylesheet" type="text/css" href="Login.css"/>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
+    <form id="login" runat="server">
+        <div id="backBoard">
+            <div id="loginBoard">
+                <asp:TextBox runat="server" ID="username" CssClass="textBox"></asp:TextBox>
+                <asp:TextBox runat="server" ID="password" CssClass="textBox" TextMode="Password"></asp:TextBox>
+                <asp:Button runat="server" ID="submit" CssClass="submit" Text="登录"/>
+            </div>
         </div>
     </form>
 </body>

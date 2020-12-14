@@ -1,4 +1,41 @@
 ﻿body {
     margin:0px;
-    background-color:aqua;
+}
+
+#backBoard {
+    width: 100vw;
+    height: 100vh;
+    background-color: #409eff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#loginBoard {
+    width: 20vw;
+    height: 15vw;
+    background-color: rgba(255,255,255,0.1);
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textBox{
+    background-color:white;
+    border:0px;
+    width:15vw;
+    height:30px;
+    margin:15px;
+    border-radius:0.1vw;
+}
+
+.submit {
+    width: 15vw;
+    height: 45px;
+    margin: 15px;
+    border-radius: 0.1vw;
+    background-color: #21b702;
+    color: white;
+    border-style: none;
 }
