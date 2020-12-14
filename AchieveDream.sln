@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AchieveDream", "AchieveDream.csproj", "{6FEBFC48-5079-4C06-B312-A8DF704D62BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AchieveDream", "AchieveDream.csproj", "{77C8409E-37E9-42E6-A948-EC457C1FA563}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6FEBFC48-5079-4C06-B312-A8DF704D62BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6FEBFC48-5079-4C06-B312-A8DF704D62BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6FEBFC48-5079-4C06-B312-A8DF704D62BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6FEBFC48-5079-4C06-B312-A8DF704D62BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77C8409E-37E9-42E6-A948-EC457C1FA563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C8409E-37E9-42E6-A948-EC457C1FA563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77C8409E-37E9-42E6-A948-EC457C1FA563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C8409E-37E9-42E6-A948-EC457C1FA563}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E8264769-0C41-45C2-BD40-50197BA49BF6}
+		SolutionGuid = {E86F478F-0476-4628-AD0E-92CA2CB29D92}
 	EndGlobalSection
 EndGlobal
