@@ -9,6 +9,7 @@ namespace AchieveDream.Objects
     {
         private string _username;
         private string _password;
+
         public string Username
         {
             set
@@ -20,6 +21,7 @@ namespace AchieveDream.Objects
                 return _username;
             }
         }
+
         public string Password
         {
             set
@@ -31,16 +33,19 @@ namespace AchieveDream.Objects
                 return _password;
             }
         }
+
         public User()
         {
             _username = null;
             _password = null;
         }
+
         public User(string username)
         {
             _username = username;
             _password = null;
         }
+
         public User(string username, string password)
         {
             _username = username;

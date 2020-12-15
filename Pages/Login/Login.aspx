@@ -14,7 +14,7 @@
         <div class="iconBox c">
             <asp:TextBox runat="server" ID="password" CssClass="textBox" TextMode="Password" MaxLength="30"></asp:TextBox>
             <asp:Image runat="server" ID="lIcon2" ImageUrl="/Resource/image/password.png" CssClass="l icon" />
-            <asp:Image runat="server" ID="rIcon" ImageUrl="/Resource/image/eye-close.png" CssClass="r icon"/>
+            <asp:ImageButton runat="server" ID="rIcon" ImageUrl="/Resource/image/eye-close.png" CssClass="r icon" OnClick="TextMode_Change"/>
         </div>
         <div class="middle text">
             
@@ -22,7 +22,7 @@
         </div>
         <asp:Button runat="server" ID="submit" CssClass="submit" Text="登录" OnClick="Submit_Click" />
         <div class="text ca">
-            <asp:LinkButton runat="server" CssClass="pointer" ID="logon" OnClick="logon_Click">注册</asp:LinkButton>
+            <asp:LinkButton runat="server" CssClass="pointer" ID="logon" OnClick="Logon_Click">注册</asp:LinkButton>
             <asp:LinkButton runat="server" ID="forget" CssClass="pointer" Visible="true" OnClick="Forget_Click">忘记密码？</asp:LinkButton>
             <asp:LinkButton runat="server" ID="changePhone" CssClass="pointer" Visible="false">更换手机？</asp:LinkButton>
         </div>

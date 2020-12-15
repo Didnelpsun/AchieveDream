@@ -10,8 +10,28 @@ namespace AchieveDream.Pages.LogIn
         {
             HttpCookie login = new HttpCookie("login");
             login["loginPattern"] = "false";
+            login["textMode"] = "true";
             Response.Cookies.Add(login);
         }
+
+        protected void TextMode_Change(object sender, EventArgs e)
+        {
+            HttpCookie login = Request.Cookies["login"];
+            bool textMode = !Convert.ToBoolean(login["textMode"]);
+            login["textMode"] = (textMode).ToString();
+            Response.Cookies.Add(login);
+            if (textMode)
+            {
+                rIcon.ImageUrl = "/Resource/image/eye-close.png";
+                password.TextMode = System.Web.UI.WebControls.TextBoxMode.Password;
+            }
+            else
+            {
+                rIcon.ImageUrl = "/Resource/image/eye-open.png";
+                password.TextMode = System.Web.UI.WebControls.TextBoxMode.SingleLine;
+            }
+        }
+
         protected void Pattern_Change(object sender, EventArgs e)
         {
             HttpCookie login = Request.Cookies["login"];
@@ -37,6 +57,7 @@ namespace AchieveDream.Pages.LogIn
                 changePhone.Visible = false;
             }
         }
+
         protected void Submit_Click(object sender, EventArgs e)
         {
             User user = new User(username.Text.ToString().Trim(), password.Text.ToString().Trim());
@@ -47,7 +68,7 @@ namespace AchieveDream.Pages.LogIn
 
         }
 
-        protected void logon_Click(object sender, EventArgs e)
+        protected void Logon_Click(object sender, EventArgs e)
         {
             Response.Write("<script>alert('dfdfd')</script>");
         }

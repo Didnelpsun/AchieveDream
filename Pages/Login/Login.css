@@ -30,13 +30,16 @@
     position: absolute;
 }
 
-.l{
-    left:20px;
+.l {
+    left: 20px;
 }
 
 .r {
     cursor: pointer;
     right: 20px;
+    border:0px;
+    outline:none;
+    text-decoration:none;
 }
 
 .middle {
@@ -45,10 +48,10 @@
     align-items: center;
 }
 
-.pointer{
-    cursor:pointer;
-    color:white;
-    text-decoration:none;
+.pointer {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
 }
 
 .submit {
@@ -69,5 +72,5 @@
 .text {
     width: 15vw;
     color: white;
-    font-size:10px;
+    font-size: 10px;
 }
