@@ -8,7 +8,7 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="logon" runat="server">
         <div>
         </div>
     </form>

@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Basic.master.cs" Inherits="AchieveDream.Templates.Basic" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="Basic.css" />
+    <link rel="stylesheet" type="text/css" href="../../Resource/css/flex.css" />
+    <link rel="icon" type="image/x-icon" href="../../Resource/icon.ico" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="basic" runat="server" method="post" class="backBoard cc">
+        <asp:ContentPlaceHolder ID="content" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

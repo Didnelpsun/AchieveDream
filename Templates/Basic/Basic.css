@@ -1,0 +1,10 @@
+﻿body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+.backBoard {
+    width: 100vw;
+    height: 100vh;
+    background-color: #409eff;
+}

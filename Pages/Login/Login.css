@@ -1,33 +1,54 @@
-﻿body {
-    margin:0px;
-}
-
-#backBoard {
-    width: 100vw;
-    height: 100vh;
-    background-color: #409eff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-#loginBoard {
+﻿.loginBoard {
     width: 20vw;
     height: 15vw;
     background-color: rgba(255,255,255,0.1);
+}
+
+.textBox {
+    background-color: white;
+    border: 0px;
+    width: 15vw;
+    height: 30px;
+    margin: 15px;
+    border-radius: 0.1vw;
+    text-indent: 30px;
+}
+
+    .textBox:focus {
+        outline: none;
+        border: 0px;
+    }
+
+.iconBox {
+    position: relative;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: absolute;
+}
+
+.l{
+    left:20px;
+}
+
+.r {
+    cursor: pointer;
+    right: 20px;
+}
+
+.middle {
     display: flex;
-    flex-direction:column;
-    justify-content: center;
+    flex-direction: row-reverse;
     align-items: center;
 }
 
-.textBox{
-    background-color:white;
-    border:0px;
-    width:15vw;
-    height:30px;
-    margin:15px;
-    border-radius:0.1vw;
+.pointer{
+    cursor:pointer;
+    color:white;
+    text-decoration:none;
 }
 
 .submit {
@@ -38,4 +59,15 @@
     background-color: #21b702;
     color: white;
     border-style: none;
+}
+
+    .submit:focus {
+        outline: none;
+        border: 0px;
+    }
+
+.text {
+    width: 15vw;
+    color: white;
+    font-size:10px;
 }
