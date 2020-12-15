@@ -75,6 +75,7 @@
     <Content Include="Resource\icon.ico" />
     <Content Include="Resource\image\eye-close.png" />
     <Content Include="Resource\image\eye-open.png" />
+    <Content Include="Resource\image\message.png" />
     <Content Include="Resource\image\password.png" />
     <Content Include="Resource\image\phone.png" />
     <Content Include="Resource\image\user.png" />
