@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Timers;
-using AchieveDream.Objects;
+//using System.Timers;
 
 namespace AchieveDream.Pages.LogIn
 {
     public partial class LogIn : System.Web.UI.Page
     {
-        private Timer timer = new Timer(1000);
+        //private Timer timer = new Timer(1000);
         protected void Page_Init(object sender, EventArgs e)
         {
             //HttpCookie login = new HttpCookie("login");
@@ -20,10 +19,10 @@ namespace AchieveDream.Pages.LogIn
             //    login["textMode"] = "true";
             //    Response.Cookies.Add(login);
             //}
-            timer.AutoReset = true;
-            timer.Enabled = true;
-            timer.Elapsed += new ElapsedEventHandler(Time_Elapesd);
-            ViewState["time"] = 0;
+            //timer.AutoReset = true;
+            //timer.Enabled = true;
+            //timer.Elapsed += new ElapsedEventHandler(Time_Elapesd);
+            //ViewState["time"] = 0;
             if (ViewState["loginPattern"] == null)
             {
                 ViewState["loginPattern"] = false;
@@ -31,22 +30,6 @@ namespace AchieveDream.Pages.LogIn
             if (ViewState["textMode"] == null)
             {
                 ViewState["textMode"] = true;
-            }
-        }
-
-        private void Time_Elapesd(object sender, ElapsedEventArgs e)
-        {
-            int time = Convert.ToInt16(ViewState["time"]);
-            if (time <= 0)
-            {
-                timer.Stop();
-                sendMsgBox.Text = "获取验证码";
-            }
-            else
-            {
-                time--;
-                ViewState["time"] = time;
-                sendMsgBox.Text = time + "S后重获";
             }
         }
 
@@ -66,14 +49,30 @@ namespace AchieveDream.Pages.LogIn
             }
         }
 
-        protected void Send_Message(object sender, EventArgs e)
-        {
-            if (Convert.ToInt16(ViewState["time"]) == 0)
-            {
-                ViewState["time"] = 60;
-                timer.Start();
-            }
-        }
+        //protected void Send_Message(object sender, EventArgs e)
+        //{
+        //    if (Convert.ToInt16(ViewState["time"]) == 0)
+        //    {
+        //        ViewState["time"] = 60;
+        //        timer.Start();
+        //    }
+        //}
+
+        //private void Time_Elapesd(object sender, ElapsedEventArgs e)
+        //{
+        //    int time = Convert.ToInt16(ViewState["time"]);
+        //    if (time <= 0)
+        //    {
+        //        timer.Stop();
+        //        sendMsgBox.Text = "获取验证码";
+        //    }
+        //    else
+        //    {
+        //        time--;
+        //        ViewState["time"] = time;
+        //        sendMsgBox.Text = time + "S后重获";
+        //    }
+        //}
 
         protected void Pattern_Change(object sender, EventArgs e)
         {

@@ -15,7 +15,7 @@
             <asp:TextBox runat="server" ID="textBox2" CssClass="textBox" TextMode="Password" MaxLength="30"></asp:TextBox>
             <asp:Image runat="server" ID="lIcon2" ImageUrl="/Resource/image/password.png" CssClass="l icon" />
             <asp:ImageButton runat="server" ID="rIcon" ImageUrl="/Resource/image/eye-close.png" CssClass="r icon" OnClick="TextMode_Change" Visible="true"/>
-            <asp:LinkButton runat="server" ID="sendMsgBox" CssClass="r sendMsg" Visible="false" OnClick="Send_Message">获取验证码</asp:LinkButton> 
+            <asp:LinkButton runat="server" ID="sendMsgBox" CssClass="r sendMsg" Visible="false">获取验证码</asp:LinkButton> 
         </div>
         <div class="middle text">
             <asp:LinkButton runat="server" CssClass="pointer" ID="patternButton" OnClick="Pattern_Change">手机号登录 →</asp:LinkButton>
