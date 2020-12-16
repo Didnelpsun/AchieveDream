@@ -65,6 +65,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\Data.accdb" />
     <Content Include="icon.ico" />
     <Content Include="Pages\Home\Home.aspx" />
     <Content Include="Pages\LogIn\LogIn.aspx" />
@@ -82,7 +83,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Objects\User.cs" />
+    <Compile Include="Models\LogIn.cs" />
     <Compile Include="Pages\Home\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -127,8 +128,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Objects\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
