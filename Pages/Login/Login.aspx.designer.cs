@@ -15,13 +15,13 @@ namespace AchieveDream.Pages.LogIn
     {
 
         /// <summary>
-        /// username 控件。
+        /// textBox1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox username;
+        protected global::System.Web.UI.WebControls.TextBox textBox1;
 
         /// <summary>
         /// lIcon1 控件。
@@ -33,13 +33,13 @@ namespace AchieveDream.Pages.LogIn
         protected global::System.Web.UI.WebControls.Image lIcon1;
 
         /// <summary>
-        /// password 控件。
+        /// textBox2 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox password;
+        protected global::System.Web.UI.WebControls.TextBox textBox2;
 
         /// <summary>
         /// lIcon2 控件。
@@ -58,6 +58,15 @@ namespace AchieveDream.Pages.LogIn
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton rIcon;
+
+        /// <summary>
+        /// sendMsgBox 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton sendMsgBox;
 
         /// <summary>
         /// patternButton 控件。
