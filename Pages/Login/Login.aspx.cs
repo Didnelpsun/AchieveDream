@@ -25,6 +25,7 @@ namespace AchieveDream.Pages.LogIn
             //ViewState["time"] = 0;
             if (ViewState["loginPattern"] == null)
             {
+                // 账户登录
                 ViewState["loginPattern"] = false;
             }
             if (ViewState["textMode"] == null)
@@ -107,7 +108,7 @@ namespace AchieveDream.Pages.LogIn
 
         protected void Submit_Click(object sender, EventArgs e)
         {
-            User user = new User(textBox1.Text.ToString().Trim(), textBox2.Text.ToString().Trim());
+
         }
 
         protected void Forget_Click(object sender, EventArgs e)
