@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace AchieveDream.Models
 {
@@ -35,7 +32,7 @@ namespace AchieveDream.Models
         private object[] LogInByPhone(string telephone, string code)
         {
             bool data = false;
-            string message = "";
+            string message = "未实现该功能";
             return new Object[] { data, message };
         }
     }
