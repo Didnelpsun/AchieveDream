@@ -33,6 +33,15 @@ namespace AchieveDream.Pages.LogIn
         protected global::System.Web.UI.WebControls.Image lIcon1;
 
         /// <summary>
+        /// clear 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton clear;
+
+        /// <summary>
         /// textBox2 控件。
         /// </summary>
         /// <remarks>
@@ -51,13 +60,13 @@ namespace AchieveDream.Pages.LogIn
         protected global::System.Web.UI.WebControls.Image lIcon2;
 
         /// <summary>
-        /// rIcon 控件。
+        /// changeMode 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton rIcon;
+        protected global::System.Web.UI.WebControls.ImageButton changeMode;
 
         /// <summary>
         /// sendMsgBox 控件。
@@ -112,5 +121,41 @@ namespace AchieveDream.Pages.LogIn
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton changePhone;
+
+        /// <summary>
+        /// alertBoard 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel alertBoard;
+
+        /// <summary>
+        /// alertTitle 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label alertTitle;
+
+        /// <summary>
+        /// alertText 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label alertText;
+
+        /// <summary>
+        /// alertConfirm 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button alertConfirm;
     }
 }

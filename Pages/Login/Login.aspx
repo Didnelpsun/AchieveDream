@@ -3,6 +3,7 @@
 <asp:Content ContentPlaceHolderID="head" runat="server">
     <title>登录界面</title>
     <link rel="stylesheet" type="text/css" href="Login.css" />
+    <link rel="stylesheet" type="text/css" href="../../Resource/css/alert.css" />
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="content" runat="server">
@@ -10,11 +11,12 @@
         <div class="iconBox c">
             <asp:TextBox runat="server" ID="textBox1" CssClass="textBox" MaxLength="20"></asp:TextBox>
             <asp:Image runat="server" ID="lIcon1" ImageUrl="/Resource/image/user.png" CssClass="l icon" />
+            <asp:ImageButton runat="server" ID="clear" ImageUrl="/Resource/image/clear.png" CssClass="r icon" OnClick="Clear_Text"/>
         </div>
         <div class="iconBox c">
             <asp:TextBox runat="server" ID="textBox2" CssClass="textBox" TextMode="Password" MaxLength="30"></asp:TextBox>
             <asp:Image runat="server" ID="lIcon2" ImageUrl="/Resource/image/password.png" CssClass="l icon" />
-            <asp:ImageButton runat="server" ID="rIcon" ImageUrl="/Resource/image/eye-close.png" CssClass="r icon" OnClick="TextMode_Change" Visible="true"/>
+            <asp:ImageButton runat="server" ID="changeMode" ImageUrl="/Resource/image/eye-close.png" CssClass="r icon" OnClick="TextMode_Change" Visible="true"/>
             <asp:LinkButton runat="server" ID="sendMsgBox" CssClass="r sendMsg" Visible="false">获取验证码</asp:LinkButton> 
         </div>
         <div class="middle text">
@@ -27,5 +29,13 @@
             <asp:LinkButton runat="server" ID="changePhone" CssClass="pointer" Visible="false">更换手机？</asp:LinkButton>
         </div>
     </div>
+    <asp:Panel runat="server" Visible ="false" ID="alertBoard" CssClass="alertBoard">
+        <div class="cc"> 
+            <asp:Label runat="server" ID="alertTitle" CssClass="alertTitle">登录失败！</asp:Label>
+            <hr class="alertHr"/>
+        </div>
+        <asp:Label runat="server" ID="alertText" CssClass="alertText"></asp:Label>
+        <asp:Button runat="server" Text="确定" ID="alertConfirm" CssClass="alertConfirm" OnClick="Alert_Confirm"/>
+    </asp:Panel>
 </asp:Content>
 

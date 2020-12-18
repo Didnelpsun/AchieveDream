@@ -1,0 +1,43 @@
+﻿.alertBoard {
+    color: #333;
+    width: 18vw;
+    height: 8vw;
+    background-color: white;
+    z-index: 1000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-radius: 0.1vw
+}
+
+.alertTitle {
+    font-size: 16px;
+}
+
+.alertHr {
+    width: 18vw;
+}
+
+.alertText {
+    font-size: 15px;
+}
+
+.alertConfirm {
+    width: 15vw;
+    padding: 10px;
+    border-radius: 0.1vw;
+    background-color: #21b702;
+    color: white;
+    border-style: none;
+}
+
+    .alertConfirm:focus {
+        outline: none;
+        border: 0px;
+    }

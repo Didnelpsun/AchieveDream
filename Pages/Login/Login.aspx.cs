@@ -33,18 +33,23 @@ namespace AchieveDream.Pages.LogIn
             }
         }
 
+        protected void Clear_Text(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+        }
+
         protected void TextMode_Change(object sender, EventArgs e)
         {
             bool textMode = !Convert.ToBoolean(ViewState["textMode"]);
             ViewState["textMode"] = textMode;
             if (textMode)
             {
-                rIcon.ImageUrl = "/Resource/image/eye-close.png";
+                changeMode.ImageUrl = "/Resource/image/eye-close.png";
                 textBox2.TextMode = System.Web.UI.WebControls.TextBoxMode.Password;
             }
             else
             {
-                rIcon.ImageUrl = "/Resource/image/eye-open.png";
+                changeMode.ImageUrl = "/Resource/image/eye-open.png";
                 textBox2.TextMode = System.Web.UI.WebControls.TextBoxMode.SingleLine;
             }
         }
@@ -86,7 +91,7 @@ namespace AchieveDream.Pages.LogIn
                 lIcon1.ImageUrl = "/Resource/image/phone.png";
                 lIcon2.ImageUrl = "/Resource/image/message.png";
                 textBox2.TextMode = System.Web.UI.WebControls.TextBoxMode.SingleLine;
-                rIcon.Visible = false;
+                changeMode.Visible = false;
                 sendMsgBox.Visible = true;
                 forget.Visible = false;
                 changePhone.Visible = true;
@@ -97,7 +102,7 @@ namespace AchieveDream.Pages.LogIn
                 lIcon1.ImageUrl = "/Resource/image/user.png";
                 lIcon2.ImageUrl = "/Resource/image/password.png";
                 textBox2.TextMode = System.Web.UI.WebControls.TextBoxMode.Password;
-                rIcon.Visible = true;
+                changeMode.Visible = true;
                 sendMsgBox.Visible = false;
                 forget.Visible = true;
                 changePhone.Visible = false;
@@ -108,6 +113,12 @@ namespace AchieveDream.Pages.LogIn
         {
             string s1 = textBox1.Text.ToString().Trim();
             string s2 = textBox2.Text.ToString().Trim();
+            if (s1 == "" || s2 == "")
+            {
+                alertBoard.Visible = true;
+                alertText.Text = "输入值不应为空！";
+                return;
+            }
             bool mode = Convert.ToBoolean(ViewState["loginPattern"]);
             GetLogInReturn login = new GetLogInReturn(s1, s2, mode);
             if (login.data)
@@ -121,8 +132,14 @@ namespace AchieveDream.Pages.LogIn
             }
             else
             {
-                Response.Write("<script>alert('" + login.message + "')</script>");
+                alertBoard.Visible = true;
+                alertText.Text = login.message;
             }
+        }
+
+        protected void Alert_Confirm(object sender, EventArgs e)
+        {
+            alertBoard.Visible = false;
         }
 
         protected void Forget_Click(object sender, EventArgs e)

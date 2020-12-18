@@ -71,6 +71,7 @@
     <Content Include="Pages\LogIn\LogIn.aspx" />
     <Content Include="Pages\LogIn\LogIn.css" />
     <Content Include="Pages\LogOn\LogOn.aspx" />
+    <Content Include="Resource\css\alert.css" />
     <Content Include="Resource\css\flex.css" />
     <Content Include="Resource\icon.ico" />
     <Content Include="Resource\image\eye-close.png" />
