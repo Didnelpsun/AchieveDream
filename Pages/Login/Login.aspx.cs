@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Web;
+using AchieveDream.Models;
 //using System.Timers;
 
 namespace AchieveDream.Pages.LogIn
@@ -8,21 +10,18 @@ namespace AchieveDream.Pages.LogIn
         //private Timer timer = new Timer(1000);
         protected void Page_Init(object sender, EventArgs e)
         {
-            //HttpCookie login = new HttpCookie("login");
-            //if (login["loginPattern"] == null)
-            //{
-            //    login["loginPattern"] = "false";
-            //    Response.Cookies.Add(login);
-            //}
-            //if(login["textMode"] == null)
-            //{
-            //    login["textMode"] = "true";
-            //    Response.Cookies.Add(login);
-            //}
             //timer.AutoReset = true;
             //timer.Enabled = true;
             //timer.Elapsed += new ElapsedEventHandler(Time_Elapesd);
             //ViewState["time"] = 0;
+            HttpCookie register = Request.Cookies["register"];
+            if(register!= null)
+            {
+                if(register["username"] != null)
+                {
+                    Response.Redirect("../Home/Home.aspx");
+                }
+            }
             if (ViewState["loginPattern"] == null)
             {
                 // 账户登录
@@ -81,7 +80,6 @@ namespace AchieveDream.Pages.LogIn
             textBox2.Text = "";
             bool loginPattern = !Convert.ToBoolean(ViewState["loginPattern"]);
             ViewState["loginPattern"] = loginPattern;
-            //Response.Write("<script>alert('" + loginPattern + "')</script>");
             if (loginPattern)
             {
                 patternButton.Text = "账户登录 →";
@@ -108,7 +106,23 @@ namespace AchieveDream.Pages.LogIn
 
         protected void Submit_Click(object sender, EventArgs e)
         {
-
+            string s1 = textBox1.Text.ToString().Trim();
+            string s2 = textBox2.Text.ToString().Trim();
+            bool mode = Convert.ToBoolean(ViewState["loginPattern"]);
+            GetLogInReturn login = new GetLogInReturn(s1, s2, mode);
+            if (login.data)
+            {
+                Response.Write("<script>alert('登录成功！')</script>");
+                HttpCookie register = new HttpCookie("register");
+                register["username"] = s1;
+                register.Expires = DateTime.Now.AddDays(1);
+                Response.Cookies.Add(register);
+                Response.Redirect("../Home/Home.aspx");
+            }
+            else
+            {
+                Response.Write("<script>alert('" + login.message + "')</script>");
+            }
         }
 
         protected void Forget_Click(object sender, EventArgs e)
