@@ -22,7 +22,7 @@
         </div>
         <div class="iconBox c">
             <asp:Image runat="server" ImageUrl="/Resource/image/job.png" CssClass="icon" />
-            <asp:TextBox runat="server" ID="job" CssClass="textBox" MaxLength="20"></asp:TextBox>
+            <asp:DropDownList runat="server" ID="job" CssClass="textBox"></asp:DropDownList>
         </div>
         <div class="iconBox c">
             <asp:Image runat="server" ImageUrl="/Resource/image/idCard.png" CssClass="icon" />
