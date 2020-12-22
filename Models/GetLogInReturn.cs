@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Data.OleDb;
 
 namespace AchieveDream.Models
@@ -10,7 +11,7 @@ namespace AchieveDream.Models
 
         public GetLogInReturn(string s1, string s2, bool mode)
         {
-            object[] results = new object[2];
+            Hashtable results = new Hashtable();
             if (!mode)
             {
                 results = LogInByName(s1, s2);
@@ -19,11 +20,11 @@ namespace AchieveDream.Models
             {
                 results = LogInByPhone(s1, s2);
             }
-            data = Convert.ToBoolean(results[0]);
-            message = results[1].ToString();
+            data = Convert.ToBoolean(results["data"]);
+            message = results["message"].ToString().Trim();
         }
 
-        private object[] LogInByName(string userName, string passWord)
+        private Hashtable LogInByName(string userName, string passWord)
         {
             bool data = false;
             string message = "";
@@ -71,14 +72,20 @@ namespace AchieveDream.Models
                 message = e.Message;
                 connection.Close();
             }
-            return new Object[] { data, message };
+            Hashtable hashtable = new Hashtable();
+            hashtable.Add("data", data);
+            hashtable.Add("message", message);
+            return hashtable;
         }
 
-        private object[] LogInByPhone(string telePhone, string code)
+        private Hashtable LogInByPhone(string telePhone, string code)
         {
             bool data = false;
             string message = "未实现该功能";
-            return new Object[] { data, message };
+            Hashtable hashtable = new Hashtable();
+            hashtable.Add("data", data);
+            hashtable.Add("message", message);
+            return hashtable;
         }
     }
 }

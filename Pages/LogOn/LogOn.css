@@ -1,5 +1,48 @@
 ﻿.logonBoard {
     width: 20vw;
-    height: 15vw;
+    height: 500px;
     background-color: rgba(255,255,255,0.1);
 }
+
+.textBox {
+    background-color: white;
+    border: 0px;
+    width: 15vw;
+    height: 30px;
+    margin: 15px;
+    border-radius: 0.1vw;
+    text-indent: 30px;
+}
+
+    .textBox:focus {
+        outline: none;
+        border: 0px;
+    }
+
+.iconBox {
+    position: relative;
+}
+
+.icon {
+    left: 20px;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: absolute;
+}
+
+.submit {
+    width: 15vw;
+    height: 45px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 0.1vw;
+    background-color: #21b702;
+    color: white;
+    border-style: none;
+}
+
+    .submit:focus {
+        outline: none;
+        border: 0px;
+    }

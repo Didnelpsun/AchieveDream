@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace AchieveDream.Pages.Home
 {
@@ -11,7 +7,19 @@ namespace AchieveDream.Pages.Home
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            HttpCookie register = Request.Cookies["register"];
+            if (register == null)
+            {
+                Response.Redirect("../LogIn/LogIn.aspx");
+                
+            }
+            else
+            {
+                if (register["username"] == null)
+                {
+                    Response.Redirect("../LogIn/LogIn.aspx");
+                }
+            }
         }
     }
 }

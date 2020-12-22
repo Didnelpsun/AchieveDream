@@ -14,14 +14,6 @@ namespace AchieveDream.Pages.LogIn
             //timer.Enabled = true;
             //timer.Elapsed += new ElapsedEventHandler(Time_Elapesd);
             //ViewState["time"] = 0;
-            HttpCookie register = Request.Cookies["register"];
-            if(register!= null)
-            {
-                if(register["username"] != null)
-                {
-                    Response.Redirect("../Home/Home.aspx");
-                }
-            }
             if (ViewState["loginPattern"] == null)
             {
                 // 账户登录
@@ -30,6 +22,18 @@ namespace AchieveDream.Pages.LogIn
             if (ViewState["textMode"] == null)
             {
                 ViewState["textMode"] = true;
+            }
+        }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            HttpCookie register = Request.Cookies["register"];
+            if (register != null)
+            {
+                if (register["username"] != null)
+                {
+                    Response.Redirect("../Home/Home.aspx");
+                }
             }
         }
 
@@ -144,7 +148,7 @@ namespace AchieveDream.Pages.LogIn
 
         protected void Logon_Click(object sender, EventArgs e)
         {
-            Response.Write("<script>alert('dfdfd')</script>");
+            Response.Redirect("../LogOn/LogOn.aspx");
         }
 
         protected void Forget_Click(object sender, EventArgs e)

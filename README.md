@@ -22,8 +22,8 @@ UPCASE：全大写格式
 ### C#文件
 
 + 类：PascalCase
-+ 普通方法：PascalCase
-+ ASP交互方法：UnderScorePascalCase（ASP元素_事件）
++ 普通方法：PascalCase（cs）
++ ASP交互方法：UnderScorePascalCase（aspx.cs）
 + 变量：camelCase
 + 私有变量：FUnderScorePascalCase
 + 参数：camelCase
@@ -40,8 +40,12 @@ UPCASE：全大写格式
 
 ### 数据库文件
 
++ 数据库：PascalCase
 + 字段：PascalCase
 + C#保存SQL属性：PascalCase
++ 字段量少的ID：ID（如果字段量少，且ID没有具体意义，可以直接使用int类型的ID表示）
++ 一般仅作标识作用的ID值保留0，从1开始使用
++ 如果只有两个字段，则使用ID和Name表示数据
 
 ## 格式规范
 
