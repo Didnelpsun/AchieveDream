@@ -1,7 +1,5 @@
 ﻿using System;
-using AchieveDream.Models;
 using System.Data.OleDb;
-using System.Diagnostics;
 
 namespace AchieveDream.Models
 {
@@ -25,16 +23,16 @@ namespace AchieveDream.Models
             message = results[1].ToString();
         }
 
-        private object[] LogInByName(string username, string password)
+        private object[] LogInByName(string userName, string passWord)
         {
             bool data = false;
             string message = "";
-            string comfirmword = "";
-            OleDbConnection connection = Connection.connection();
+            string comfirmWord = "";
+            OleDbConnection connection = Connection.Conn();
             try
             {
                 connection.Open();
-                string sql = "SELECT PassWord FROM [User] WHERE UserName = '" + username + "'";
+                string sql = "SELECT PassWord FROM [User] WHERE UserName = '" + userName + "';";
                 OleDbCommand command = new OleDbCommand(sql, connection);
                 OleDbDataReader reader = command.ExecuteReader();
                 if (reader.HasRows)
@@ -42,14 +40,14 @@ namespace AchieveDream.Models
                     int rows = 0;
                     while (reader.Read())
                     {
-                        comfirmword = reader["PassWord"].ToString().Trim();
+                        comfirmWord = reader["PassWord"].ToString().Trim();
                         rows++;
                     }
                     reader.Close();
                     connection.Close();
                     if (rows == 1)
                     {
-                        if (password == comfirmword)
+                        if (passWord == comfirmWord)
                         {
                             data = true;
                         }
@@ -76,7 +74,7 @@ namespace AchieveDream.Models
             return new Object[] { data, message };
         }
 
-        private object[] LogInByPhone(string telephone, string code)
+        private object[] LogInByPhone(string telePhone, string code)
         {
             bool data = false;
             string message = "未实现该功能";

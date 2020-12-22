@@ -35,7 +35,7 @@ namespace AchieveDream.Pages.LogIn
 
         protected void Clear_Text(object sender, EventArgs e)
         {
-            textBox1.Text = "";
+            TextBox1.Text = "";
         }
 
         protected void TextMode_Change(object sender, EventArgs e)
@@ -44,13 +44,13 @@ namespace AchieveDream.Pages.LogIn
             ViewState["textMode"] = textMode;
             if (textMode)
             {
-                changeMode.ImageUrl = "/Resource/image/eye-close.png";
-                textBox2.TextMode = System.Web.UI.WebControls.TextBoxMode.Password;
+                ChangeMode.ImageUrl = "/Resource/image/eye-close.png";
+                TextBox2.TextMode = System.Web.UI.WebControls.TextBoxMode.Password;
             }
             else
             {
-                changeMode.ImageUrl = "/Resource/image/eye-open.png";
-                textBox2.TextMode = System.Web.UI.WebControls.TextBoxMode.SingleLine;
+                ChangeMode.ImageUrl = "/Resource/image/eye-open.png";
+                TextBox2.TextMode = System.Web.UI.WebControls.TextBoxMode.SingleLine;
             }
         }
 
@@ -81,42 +81,42 @@ namespace AchieveDream.Pages.LogIn
 
         protected void Pattern_Change(object sender, EventArgs e)
         {
-            textBox1.Text = "";
-            textBox2.Text = "";
+            TextBox1.Text = "";
+            TextBox2.Text = "";
             bool loginPattern = !Convert.ToBoolean(ViewState["loginPattern"]);
             ViewState["loginPattern"] = loginPattern;
             if (loginPattern)
             {
-                patternButton.Text = "账户登录 →";
-                lIcon1.ImageUrl = "/Resource/image/phone.png";
-                lIcon2.ImageUrl = "/Resource/image/message.png";
-                textBox2.TextMode = System.Web.UI.WebControls.TextBoxMode.SingleLine;
-                changeMode.Visible = false;
-                sendMsgBox.Visible = true;
-                forget.Visible = false;
-                changePhone.Visible = true;
+                PatternButton.Text = "账户登录 →";
+                LIcon1.ImageUrl = "/Resource/image/phone.png";
+                LIcon2.ImageUrl = "/Resource/image/message.png";
+                TextBox2.TextMode = System.Web.UI.WebControls.TextBoxMode.SingleLine;
+                ChangeMode.Visible = false;
+                SendMsgBox.Visible = true;
+                Forget.Visible = false;
+                ChangePhone.Visible = true;
             }
             else
             {
-                patternButton.Text = "手机号登录 →";
-                lIcon1.ImageUrl = "/Resource/image/user.png";
-                lIcon2.ImageUrl = "/Resource/image/password.png";
-                textBox2.TextMode = System.Web.UI.WebControls.TextBoxMode.Password;
-                changeMode.Visible = true;
-                sendMsgBox.Visible = false;
-                forget.Visible = true;
-                changePhone.Visible = false;
+                PatternButton.Text = "手机号登录 →";
+                LIcon1.ImageUrl = "/Resource/image/user.png";
+                LIcon2.ImageUrl = "/Resource/image/password.png";
+                TextBox2.TextMode = System.Web.UI.WebControls.TextBoxMode.Password;
+                ChangeMode.Visible = true;
+                SendMsgBox.Visible = false;
+                Forget.Visible = true;
+                ChangePhone.Visible = false;
             }
         }
 
         protected void Submit_Click(object sender, EventArgs e)
         {
-            string s1 = textBox1.Text.ToString().Trim();
-            string s2 = textBox2.Text.ToString().Trim();
+            string s1 = TextBox1.Text.ToString().Trim();
+            string s2 = TextBox2.Text.ToString().Trim();
             if (s1 == "" || s2 == "")
             {
-                alertBoard.Visible = true;
-                alertText.Text = "输入值不应为空！";
+                AlertBoard.Visible = true;
+                AlertText.Text = "输入值不应为空！";
                 return;
             }
             bool mode = Convert.ToBoolean(ViewState["loginPattern"]);
@@ -132,24 +132,24 @@ namespace AchieveDream.Pages.LogIn
             }
             else
             {
-                alertBoard.Visible = true;
-                alertText.Text = login.message;
+                AlertBoard.Visible = true;
+                AlertText.Text = login.message;
             }
         }
 
         protected void Alert_Confirm(object sender, EventArgs e)
         {
-            alertBoard.Visible = false;
-        }
-
-        protected void Forget_Click(object sender, EventArgs e)
-        {
-
+            AlertBoard.Visible = false;
         }
 
         protected void Logon_Click(object sender, EventArgs e)
         {
             Response.Write("<script>alert('dfdfd')</script>");
+        }
+
+        protected void Forget_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

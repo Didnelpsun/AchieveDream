@@ -9,12 +9,12 @@
     <link rel="stylesheet" type="text/css" href="Basic.css" />
     <link rel="stylesheet" type="text/css" href="../../Resource/css/flex.css" />
     <link rel="icon" type="image/x-icon" href="../../Resource/icon.ico" />
-    <asp:ContentPlaceHolder ID="head" runat="server">
+    <asp:ContentPlaceHolder ID="Head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="basic" runat="server" method="post" class="backBoard cc">
-        <asp:ContentPlaceHolder ID="content" runat="server">
+        <asp:ContentPlaceHolder ID="Content" runat="server">
         </asp:ContentPlaceHolder>
     </form>
 </body>

@@ -15,147 +15,147 @@ namespace AchieveDream.Pages.LogIn
     {
 
         /// <summary>
-        /// textBox1 控件。
+        /// TextBox1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textBox1;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
 
         /// <summary>
-        /// lIcon1 控件。
+        /// LIcon1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image lIcon1;
+        protected global::System.Web.UI.WebControls.Image LIcon1;
 
         /// <summary>
-        /// clear 控件。
+        /// Clear 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton clear;
+        protected global::System.Web.UI.WebControls.ImageButton Clear;
 
         /// <summary>
-        /// textBox2 控件。
+        /// TextBox2 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textBox2;
+        protected global::System.Web.UI.WebControls.TextBox TextBox2;
 
         /// <summary>
-        /// lIcon2 控件。
+        /// LIcon2 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image lIcon2;
+        protected global::System.Web.UI.WebControls.Image LIcon2;
 
         /// <summary>
-        /// changeMode 控件。
+        /// ChangeMode 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton changeMode;
+        protected global::System.Web.UI.WebControls.ImageButton ChangeMode;
 
         /// <summary>
-        /// sendMsgBox 控件。
+        /// SendMsgBox 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton sendMsgBox;
+        protected global::System.Web.UI.WebControls.LinkButton SendMsgBox;
 
         /// <summary>
-        /// patternButton 控件。
+        /// PatternButton 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton patternButton;
+        protected global::System.Web.UI.WebControls.LinkButton PatternButton;
 
         /// <summary>
-        /// submit 控件。
+        /// Submit 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submit;
+        protected global::System.Web.UI.WebControls.Button Submit;
 
         /// <summary>
-        /// logon 控件。
+        /// Logon 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton logon;
+        protected global::System.Web.UI.WebControls.LinkButton Logon;
 
         /// <summary>
-        /// forget 控件。
+        /// Forget 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton forget;
+        protected global::System.Web.UI.WebControls.LinkButton Forget;
 
         /// <summary>
-        /// changePhone 控件。
+        /// ChangePhone 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton changePhone;
+        protected global::System.Web.UI.WebControls.LinkButton ChangePhone;
 
         /// <summary>
-        /// alertBoard 控件。
+        /// AlertBoard 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel alertBoard;
+        protected global::System.Web.UI.WebControls.Panel AlertBoard;
 
         /// <summary>
-        /// alertTitle 控件。
+        /// AlertTitle 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label alertTitle;
+        protected global::System.Web.UI.WebControls.Label AlertTitle;
 
         /// <summary>
-        /// alertText 控件。
+        /// AlertText 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label alertText;
+        protected global::System.Web.UI.WebControls.Label AlertText;
 
         /// <summary>
-        /// alertConfirm 控件。
+        /// AlertConfirm 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button alertConfirm;
+        protected global::System.Web.UI.WebControls.Button AlertConfirm;
     }
 }

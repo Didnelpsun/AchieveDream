@@ -66,11 +66,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\Data.accdb" />
-    <Content Include="icon.ico" />
     <Content Include="Pages\Home\Home.aspx" />
     <Content Include="Pages\LogIn\LogIn.aspx" />
     <Content Include="Pages\LogIn\LogIn.css" />
     <Content Include="Pages\LogOn\LogOn.aspx" />
+    <Content Include="Pages\LogOn\LogOn.css" />
     <Content Include="Resource\css\alert.css" />
     <Content Include="Resource\css\flex.css" />
     <Content Include="Resource\icon.ico" />
@@ -122,6 +122,7 @@
     <None Include="packages.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -140,7 +141,8 @@
     <StartupObject />
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
