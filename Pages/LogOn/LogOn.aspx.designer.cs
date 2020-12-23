@@ -15,58 +15,58 @@ namespace AchieveDream.Pages.LogOn
     {
 
         /// <summary>
-        /// userName 控件。
+        /// UserName 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox userName;
+        protected global::System.Web.UI.WebControls.TextBox UserName;
 
         /// <summary>
-        /// passWord 控件。
+        /// PassWord 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox passWord;
+        protected global::System.Web.UI.WebControls.TextBox PassWord;
 
         /// <summary>
-        /// confirmWord 控件。
+        /// ConfirmWord 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox confirmWord;
+        protected global::System.Web.UI.WebControls.TextBox ConfirmWord;
 
         /// <summary>
-        /// job 控件。
+        /// Job 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList job;
+        protected global::System.Web.UI.WebControls.DropDownList Job;
 
         /// <summary>
-        /// idCode 控件。
+        /// IDCode 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox idCode;
+        protected global::System.Web.UI.WebControls.TextBox IDCode;
 
         /// <summary>
-        /// telephone 控件。
+        /// Telephone 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox telephone;
+        protected global::System.Web.UI.WebControls.TextBox Telephone;
 
         /// <summary>
         /// Submit 控件。

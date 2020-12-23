@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Web;
-using AchieveDream.Models;
 //using System.Timers;
 
 namespace AchieveDream.Pages.LogIn
@@ -124,7 +123,7 @@ namespace AchieveDream.Pages.LogIn
                 return;
             }
             bool mode = Convert.ToBoolean(ViewState["loginPattern"]);
-            GetLogInReturn login = new GetLogInReturn(s1, s2, mode);
+            Models.LogIn login = new Models.LogIn(s1, s2, mode);
             if (login.data)
             {
                 Response.Write("<script>alert('登录成功！')</script>");

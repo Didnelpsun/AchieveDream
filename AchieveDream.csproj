@@ -90,7 +90,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Connection.cs" />
-    <Compile Include="Models\GetLogInReturn.cs" />
+    <Compile Include="Models\LogOn.cs" />
+    <Compile Include="Models\GetJobSet.cs" />
+    <Compile Include="Models\LogIn.cs" />
+    <Compile Include="Objects\Simple.cs" />
     <Compile Include="Pages\Home\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -135,9 +138,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Objects\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

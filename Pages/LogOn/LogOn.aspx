@@ -10,27 +10,27 @@
     <div class="logonBoard cc">
         <div class="iconBox c">
             <asp:Image runat="server" ImageUrl="/Resource/image/user.png" CssClass="icon" />
-            <asp:TextBox runat="server" ID="userName" CssClass="textBox" MaxLength="20"></asp:TextBox>
+            <asp:TextBox runat="server" ID="UserName" CssClass="textBox" MaxLength="20"></asp:TextBox>
         </div>
         <div class="iconBox c">
             <asp:Image runat="server" ImageUrl="/Resource/image/password.png" CssClass="icon" />
-            <asp:TextBox runat="server" ID="passWord" CssClass="textBox" MaxLength="20"></asp:TextBox>
+            <asp:TextBox runat="server" ID="PassWord" CssClass="textBox" MaxLength="20"></asp:TextBox>
         </div>
         <div class="iconBox c">
             <asp:Image runat="server" ImageUrl="/Resource/image/confirm.png" CssClass="icon" />
-            <asp:TextBox runat="server" ID="confirmWord" CssClass="textBox" MaxLength="20"></asp:TextBox>
+            <asp:TextBox runat="server" ID="ConfirmWord" CssClass="textBox" MaxLength="20"></asp:TextBox>
         </div>
         <div class="iconBox c">
             <asp:Image runat="server" ImageUrl="/Resource/image/job.png" CssClass="icon" />
-            <asp:DropDownList runat="server" ID="job" CssClass="textBox"></asp:DropDownList>
+            <asp:DropDownList runat="server" ID="Job" CssClass="textBox"></asp:DropDownList>
         </div>
         <div class="iconBox c">
             <asp:Image runat="server" ImageUrl="/Resource/image/idCard.png" CssClass="icon" />
-            <asp:TextBox runat="server" ID="idCode" CssClass="textBox" MaxLength="18"></asp:TextBox>
+            <asp:TextBox runat="server" ID="IDCode" CssClass="textBox" MaxLength="18"></asp:TextBox>
         </div>
         <div class="iconBox c">
             <asp:Image runat="server" ImageUrl="/Resource/image/phone.png" CssClass="icon" />
-            <asp:TextBox runat="server" ID="telephone" CssClass="textBox" MaxLength="11"></asp:TextBox>
+            <asp:TextBox runat="server" ID="Telephone" CssClass="textBox" MaxLength="11"></asp:TextBox>
         </div>
         <asp:Button runat="server" ID="Submit" CssClass="submit" Text="登录" OnClick="Submit_Click" />
     </div>

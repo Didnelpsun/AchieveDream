@@ -4,12 +4,12 @@ using System.Data.OleDb;
 
 namespace AchieveDream.Models
 {
-    public class GetLogInReturn
+    public class LogIn
     {
         public bool data;
         public string message;
 
-        public GetLogInReturn(string s1, string s2, bool mode)
+        public LogIn(string s1, string s2, bool mode)
         {
             Hashtable results = new Hashtable();
             if (!mode)

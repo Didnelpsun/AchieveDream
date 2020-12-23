@@ -6,18 +6,20 @@ namespace AchieveDream.Models
 {
     public class Connection
     {
+        public static string kind = "Provider=Microsoft.Ace.OleDb.12.0;";
         public static OleDbConnection Conn()
         {
-            string cons = "Provider=Microsoft.Ace.OleDb.12.0;";
-            cons += @"Data Source=" + HttpContext.Current.Server.MapPath("/Data/Data.accdb");
-            return new OleDbConnection(cons);
+            return new OleDbConnection(kind + @"Data Source=" + HttpContext.Current.Server.MapPath("/Data/Data.accdb"));
         }
 
         public static OleDbConnection Conn(string s)
         {
-            string cons = "Provider=Microsoft.Ace.OleDb.12.0;";
-            cons += @"Data Source=" + HttpContext.Current.Server.MapPath(s);
-            return new OleDbConnection(cons);
+            return new OleDbConnection(kind + @"Data Source=" + HttpContext.Current.Server.MapPath(s));
+        }
+
+        public static string ConnStr()
+        {
+            return kind + @"Data Source=" + HttpContext.Current.Server.MapPath("/Data/Data.accdb");
         }
     }
     
