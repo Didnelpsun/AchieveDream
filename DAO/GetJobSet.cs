@@ -11,7 +11,7 @@ namespace AchieveDream
         public static Hashtable GetJobList()
         {
             IList<Simple> data = new List<Simple>();
-            string message = "";
+            string message;
             Hashtable result = new Hashtable();
             OleDbConnection connection = Connection.Conn;
             try

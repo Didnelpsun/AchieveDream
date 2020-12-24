@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Data.OleDb;
-using AchieveDream.Objects;
-using System.Collections.Generic;
 using System.Collections;
 
 namespace AchieveDream

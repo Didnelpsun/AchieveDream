@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Templates/Basic/Basic.Master" AutoEventWireup="true" CodeBehind="Navigation.master.cs" Inherits="AchieveDream.Templates.Navigation.Navigation" %>
+
+<asp:Content ID="Head" ContentPlaceHolderID="Head" runat="server">
+    <!--二层嵌套时CSS路径出错，此时定位是应用母版的子页面-->
+    <link rel="stylesheet" type="text/css" href="../../Templates/Navigation/Navigation.css" />
+    <asp:ContentPlaceHolder ID="NavigationHead" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content" ContentPlaceHolderID="Content" runat="server">
+    <asp:Panel runat="server" CssClass="navigation">
+        <asp:Panel runat="server" CssClass="navigationBar">
+            <asp:Image runat="server" ImageUrl="~/Resource/icon.ico" CssClass="naviIcon"/>
+            <asp:ImageButton runat="server"/>
+        </asp:Panel>
+        <asp:Panel runat="server" CssClass="switchBar">
+        </asp:Panel>
+    </asp:Panel>
+
+    <asp:ContentPlaceHolder ID="NavigationContant" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
