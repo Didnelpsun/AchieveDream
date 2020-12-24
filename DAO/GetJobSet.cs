@@ -1,21 +1,19 @@
 ﻿using System;
 using System.Data.OleDb;
-using System.Data;
 using AchieveDream.Objects;
 using System.Collections.Generic;
+using System.Collections;
 
-namespace AchieveDream.Models
+namespace AchieveDream
 {
-    public class LogOn
+    public partial class DAO
     {
-        public bool data;
-        public string message;
-
-        public LogOn(string userName, string passWord, string conmfirmWord, int job, string idCode, string telephone)
+        public static Hashtable GetJobList()
         {
-            data = false;
-            message = "";
-            OleDbConnection connection = Connection.Conn();
+            IList<Simple> data = new List<Simple>();
+            string message = "";
+            Hashtable result = new Hashtable();
+            OleDbConnection connection = Connection.Conn;
             try
             {
                 connection.Open();
@@ -24,19 +22,22 @@ namespace AchieveDream.Models
                 OleDbDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    list.Add(new Simple(Convert.ToInt16(reader["ID"]), reader["Name"].ToString().Trim()));
+                    data.Add(new Simple(Convert.ToInt16(reader["ID"]), reader["Name"].ToString().Trim()));
                 }
                 reader.Close();
-                data = true;
+                result.Add("data", data);
             }
             catch(Exception e)
             {
+                result.Clear();
                 message = e.Message;
+                result.Add("message", message);
             }
             finally
             {
                 connection.Close();
             }
+            return result;
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Web;
 //using System.Timers;
 
@@ -34,6 +35,20 @@ namespace AchieveDream.Pages.LogIn
                     Response.Redirect("../Home/Home.aspx");
                 }
             }
+        }
+
+        private void Alert(string title, string text)
+        {
+            AlertBoard.Visible = true;
+            AlertTitle.Text = title;
+            AlertText.Text = text;
+        }
+
+        private void Alert(string text)
+        {
+            AlertBoard.Visible = true;
+            AlertTitle.Text = "登录失败";
+            AlertText.Text = text;
         }
 
         protected void Clear_Text(object sender, EventArgs e)
@@ -118,25 +133,23 @@ namespace AchieveDream.Pages.LogIn
             string s2 = TextBox2.Text.ToString().Trim();
             if (s1 == "" || s2 == "")
             {
-                AlertBoard.Visible = true;
-                AlertText.Text = "输入值不应为空！";
+                Alert("输入值不应为空！");
                 return;
             }
             bool mode = Convert.ToBoolean(ViewState["loginPattern"]);
-            Models.LogIn login = new Models.LogIn(s1, s2, mode);
-            if (login.data)
+            Hashtable result = DAO.LogIn(s1, s2, mode);
+            if (result.ContainsKey("data"))
             {
-                Response.Write("<script>alert('登录成功！')</script>");
+                Alert("登录成功", "三秒后跳转到主页面！");
                 HttpCookie register = new HttpCookie("register");
                 register["username"] = s1;
                 register.Expires = DateTime.Now.AddDays(1);
                 Response.Cookies.Add(register);
-                Response.Redirect("../Home/Home.aspx");
+                Response.Write("<meta http-equiv='refresh' content='3;URL=../Home/Home.aspx'>");
             }
             else
             {
-                AlertBoard.Visible = true;
-                AlertText.Text = login.message;
+                Alert(result["message"].ToString().Trim());
             }
         }
 
@@ -152,7 +165,7 @@ namespace AchieveDream.Pages.LogIn
 
         protected void Forget_Click(object sender, EventArgs e)
         {
-
+            Alert("系统错误", "暂未实现该功能！");
         }
     }
 }

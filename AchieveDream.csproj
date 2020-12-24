@@ -89,10 +89,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Connection.cs" />
-    <Compile Include="Models\LogOn.cs" />
-    <Compile Include="Models\GetJobSet.cs" />
-    <Compile Include="Models\LogIn.cs" />
+    <Compile Include="DAO\Connection.cs" />
+    <Compile Include="DAO\GetTelephoneNum.cs" />
+    <Compile Include="DAO\GetUserNameNum.cs" />
+    <Compile Include="DAO\LogOn.cs" />
+    <Compile Include="DAO\GetJobSet.cs" />
+    <Compile Include="DAO\LogIn.cs" />
     <Compile Include="Objects\Simple.cs" />
     <Compile Include="Pages\Home\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>

@@ -2,16 +2,13 @@
 using System.Collections;
 using System.Data.OleDb;
 
-namespace AchieveDream.Models
+namespace AchieveDream
 {
-    public class LogIn
+    public partial class DAO
     {
-        public bool data;
-        public string message;
-
-        public LogIn(string s1, string s2, bool mode)
+        public static Hashtable LogIn(string s1, string s2, bool mode)
         {
-            Hashtable results = new Hashtable();
+            Hashtable results;
             if (!mode)
             {
                 results = LogInByName(s1, s2);
@@ -20,16 +17,15 @@ namespace AchieveDream.Models
             {
                 results = LogInByPhone(s1, s2);
             }
-            data = Convert.ToBoolean(results["data"]);
-            message = results["message"].ToString().Trim();
+            return results;
         }
 
-        private Hashtable LogInByName(string userName, string passWord)
+        private static Hashtable LogInByName(string userName, string passWord)
         {
             bool data = false;
             string message = "";
             string comfirmWord = "";
-            OleDbConnection connection = Connection.Conn();
+            OleDbConnection connection = Connection.Conn;
             try
             {
                 connection.Open();
@@ -70,21 +66,32 @@ namespace AchieveDream.Models
             catch (Exception e)
             {
                 message = e.Message;
+            }
+            finally
+            {
                 connection.Close();
             }
-            Hashtable hashtable = new Hashtable();
-            hashtable.Add("data", data);
-            hashtable.Add("message", message);
-            return hashtable;
+            if (data)
+            {
+                return new Hashtable{
+                    { "data", data }
+                };
+            }
+            else
+            {
+                return new Hashtable{
+                    { "message", message }
+                };
+            }
         }
 
-        private Hashtable LogInByPhone(string telePhone, string code)
+        private static Hashtable LogInByPhone(string telePhone, string code)
         {
-            bool data = false;
             string message = "未实现该功能";
-            Hashtable hashtable = new Hashtable();
-            hashtable.Add("data", data);
-            hashtable.Add("message", message);
+            Hashtable hashtable = new Hashtable
+            {
+                { "message", message }
+            };
             return hashtable;
         }
     }
