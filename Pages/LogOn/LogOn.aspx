@@ -1,7 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LogOn.aspx.cs" Inherits="AchieveDream.Pages.LogOn.LogOn" MasterPageFile="/Templates/Basic/Basic.Master" %>
 
+<asp:Content ContentPlaceHolderID="Title" runat="server">
+    注册页面
+</asp:Content>
+
 <asp:Content ContentPlaceHolderID="Head" runat="server">
-    <title>注册页面</title>
     <link rel="stylesheet" type="text/css" href="LogOn.css" />
     <link rel="stylesheet" type="text/css" href="../../Resource/css/alert.css" />
 </asp:Content>

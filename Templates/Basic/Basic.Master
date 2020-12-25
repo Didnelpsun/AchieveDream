@@ -5,6 +5,10 @@
 <html>
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+        <asp:ContentPlaceHolder ID="Title" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
     <link rel="stylesheet" type="text/css" href="Basic.css" />
     <link rel="stylesheet" type="text/css" href="../../Resource/css/flex.css" />
     <link rel="icon" type="image/x-icon" href="../../Resource/icon.ico" />

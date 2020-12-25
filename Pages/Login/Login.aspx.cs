@@ -143,8 +143,11 @@ namespace AchieveDream.Pages.LogIn
                 Alert("登录成功", "三秒后跳转到主页面！");
                 HttpCookie register = new HttpCookie("register");
                 register["username"] = s1;
+                HttpCookie work = new HttpCookie("work");
+                work["switchIndex"] = "0";
                 register.Expires = DateTime.Now.AddDays(1);
                 Response.Cookies.Add(register);
+                Response.Cookies.Add(work);
                 Response.Write("<meta http-equiv='refresh' content='3;URL=../Home/Home.aspx'>");
             }
             else

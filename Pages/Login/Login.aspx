@@ -1,7 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LogIn.aspx.cs" Inherits="AchieveDream.Pages.LogIn.LogIn" MasterPageFile="/Templates/Basic/Basic.Master" %>
 
+<asp:Content ContentPlaceHolderID="Title" runat="server">
+    登录界面
+</asp:Content>
+
 <asp:Content ContentPlaceHolderID="Head" runat="server">
-    <title>登录界面</title>
     <link rel="stylesheet" type="text/css" href="LogIn.css" />
     <link rel="stylesheet" type="text/css" href="../../Resource/css/alert.css" />
 </asp:Content>
@@ -23,7 +26,7 @@
             <asp:LinkButton runat="server" CssClass="pointer" ID="PatternButton" OnClick="Pattern_Change">手机号登录 →</asp:LinkButton>
         </div>
         <asp:Button runat="server" ID="Submit" CssClass="submit" Text="登录" OnClick="Submit_Click" />
-        <div class="text ca">
+        <div class="text ra">
             <asp:LinkButton runat="server" CssClass="pointer" ID="Logon" OnClick="Logon_Click">注册</asp:LinkButton>
             <asp:LinkButton runat="server" ID="Forget" CssClass="pointer" Visible="true" OnClick="Forget_Click">忘记密码？</asp:LinkButton>
             <asp:LinkButton runat="server" ID="ChangePhone" CssClass="pointer" Visible="false">更换手机？</asp:LinkButton>
