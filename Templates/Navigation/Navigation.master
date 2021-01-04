@@ -1,8 +1,8 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/Templates/Basic/Basic.Master" AutoEventWireup="true" CodeBehind="Navigation.master.cs" Inherits="AchieveDream.Templates.Navigation.Navigation" %>
 
 <asp:Content ContentPlaceHolderID="Title" runat="server">
-  <asp:ContentPlaceHolder runat="server" ID="NavigationTitle">
-  </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder runat="server" ID="NavigationTitle">
+    </asp:ContentPlaceHolder>
 </asp:Content>
 
 <asp:Content ID="Head" ContentPlaceHolderID="Head" runat="server">
@@ -14,17 +14,16 @@
 <asp:Content ID="Content" ContentPlaceHolderID="Content" runat="server">
     <asp:Panel runat="server" CssClass="navigation">
         <asp:Panel runat="server" CssClass="navigationBar rb">
-            <asp:Image runat="server" ImageUrl="~/Resource/icon.ico" CssClass="naviIcon"/>
-            <asp:ImageButton runat="server" ImageUrl="~/Resource/image/user.png" CssClass="userHead"/>
-        </asp:Panel>
-        <asp:Panel runat="server" CssClass="switchBar rb">
-            <asp:Button runat="server" CssClass="switchButton switchChoose cc" ID="SwitchHome" Text="首页" OnClick="Switch"></asp:Button>
-            <asp:Button runat="server" CssClass="switchButton cc" ID="SwitchForum" Text="论坛" OnClick="Switch"></asp:Button>
-            <asp:Button runat="server" CssClass="switchButton cc" ID="SwitchCustom" Text="定制" OnClick="Switch"></asp:Button>
-            <asp:Button runat="server" CssClass="switchButton cc" ID="SwitchMine" Text="我的" OnClick="Switch"></asp:Button>
+            <asp:Image runat="server" ImageUrl="~/Resource/icon.ico" CssClass="naviIcon" />
+            <asp:ImageButton runat="server" ImageUrl="~/Resource/image/user.png" CssClass="userHead" />
         </asp:Panel>
     </asp:Panel>
-
+    <asp:Panel runat="server" CssClass="switchBar cc">
+        <asp:Button runat="server" CssClass="switchButton switchChoose cc" ID="SwitchHome" Text="首页" OnClick="Switch"></asp:Button>
+        <asp:Button runat="server" CssClass="switchButton cc" ID="SwitchForum" Text="论坛" OnClick="Switch"></asp:Button>
+        <asp:Button runat="server" CssClass="switchButton cc" ID="SwitchCustom" Text="定制" OnClick="Switch"></asp:Button>
+        <asp:Button runat="server" CssClass="switchButton cc" ID="SwitchMine" Text="我的" OnClick="Switch"></asp:Button>
+    </asp:Panel>
     <asp:ContentPlaceHolder ID="NavigationContant" runat="server">
     </asp:ContentPlaceHolder>
 </asp:Content>

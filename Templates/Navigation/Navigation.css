@@ -6,7 +6,7 @@
 .navigationBar {
     width: 100vw;
     height: 100px;
-    background-color: #409eff;
+    background-color: #030f62;
 }
 
 .naviIcon {
@@ -32,13 +32,15 @@
     }
 
 .switchBar {
-    width: 100vw;
-    height: 50px;
+    width: 125px;
+    height: 75vh;
     background-color: #030f62;
+    position: fixed;
+    left: 0px;
 }
 
 .switchButton {
-    width: 24.5vw;
+    width: 125px;
     height: 45px;
     background-color: #030f62;
     color: #409eff;
