@@ -31,7 +31,8 @@ UPCASE：全大写格式
 
 ### ASP文件
 
-+ 元素ID：PascalCase
++ ASP.NET元素ID：PascalCase
++ HTML元素ID：PascalCase
 
 ### CSS文件
 

@@ -18,12 +18,15 @@
             <asp:ImageButton runat="server" ImageUrl="~/Resource/image/user.png" CssClass="userHead" />
         </asp:Panel>
     </asp:Panel>
-    <asp:Panel runat="server" CssClass="switchBar cc">
+    <asp:Panel runat="server" CssClass="navigationSwitchBar cc">
         <asp:Button runat="server" CssClass="switchButton switchChoose cc" ID="SwitchHome" Text="首页" OnClick="Switch"></asp:Button>
         <asp:Button runat="server" CssClass="switchButton cc" ID="SwitchForum" Text="论坛" OnClick="Switch"></asp:Button>
         <asp:Button runat="server" CssClass="switchButton cc" ID="SwitchCustom" Text="定制" OnClick="Switch"></asp:Button>
         <asp:Button runat="server" CssClass="switchButton cc" ID="SwitchMine" Text="我的" OnClick="Switch"></asp:Button>
     </asp:Panel>
-    <asp:ContentPlaceHolder ID="NavigationContant" runat="server">
-    </asp:ContentPlaceHolder>
+    <div style="height: 15vh;"></div>
+    <asp:Panel runat="server" CssClass="navigationContentBoard">
+        <asp:ContentPlaceHolder ID="NavigationContant" runat="server">
+        </asp:ContentPlaceHolder>
+    </asp:Panel>
 </asp:Content>

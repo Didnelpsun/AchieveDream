@@ -85,9 +85,16 @@
     <Content Include="Resource\image\confirm.png" />
     <Content Include="Resource\image\eye-close.png" />
     <Content Include="Resource\image\eye-open.png" />
-    <Content Include="Resource\image\idCard.png" />
+    <Content Include="Resource\image\id-card.png" />
     <Content Include="Resource\image\job.png" />
     <Content Include="Resource\image\message.png" />
+    <Content Include="Resource\image\mine\个人资料.png" />
+    <Content Include="Resource\image\mine\发布.png" />
+    <Content Include="Resource\image\mine\好友.png" />
+    <Content Include="Resource\image\mine\收藏.png" />
+    <Content Include="Resource\image\mine\消息.png" />
+    <Content Include="Resource\image\mine\设置.png" />
+    <Content Include="Resource\image\mine\账号安全.png" />
     <Content Include="Resource\image\password.png" />
     <Content Include="Resource\image\phone.png" />
     <Content Include="Resource\image\user.png" />

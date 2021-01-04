@@ -28,7 +28,7 @@
             <asp:DropDownList runat="server" ID="Job" CssClass="textBox"></asp:DropDownList>
         </div>
         <div class="iconBox c">
-            <asp:Image runat="server" ImageUrl="/Resource/image/idCard.png" CssClass="icon" />
+            <asp:Image runat="server" ImageUrl="/Resource/image/id-card.png" CssClass="icon" />
             <asp:TextBox runat="server" ID="IDCode" CssClass="textBox" MaxLength="18"></asp:TextBox>
         </div>
         <div class="iconBox c">
