@@ -97,6 +97,7 @@
     <Content Include="Resource\icon.ico" />
     <Content Include="Resource\image\clear.png" />
     <Content Include="Resource\image\confirm.png" />
+    <Content Include="Resource\image\custom\clock.png" />
     <Content Include="Resource\image\eye-close.png" />
     <Content Include="Resource\image\eye-open.png" />
     <Content Include="Resource\image\id-card.png" />
@@ -112,6 +113,7 @@
     <Content Include="Resource\image\mine\账号安全.png" />
     <Content Include="Resource\image\password.png" />
     <Content Include="Resource\image\phone.png" />
+    <Content Include="Resource\image\search.png" />
     <Content Include="Resource\image\user.png" />
     <Content Include="Templates\Basic\Basic.css" />
     <Content Include="Templates\Navigation\Navigation.css" />

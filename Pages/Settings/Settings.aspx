@@ -9,6 +9,12 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="NavigationContant" runat="server">
-    <div id="SettingsBoard">
+    <div>
+        <hr />
+         <asp:Button runat="server" Text="黑名单管理" CssClass="clickCard"/>
+        <asp:Button runat="server" Text="消息清理" CssClass="clickCard"/>
+         <asp:Button runat="server" Text="隐私政策" CssClass="clickCard"/>
+        <asp:Button runat="server" Text="帮助" CssClass="clickCard"/>
+        <asp:Button runat="server" Text="反馈：WX：Didnelpsun" CssClass="clickCard"/>
     </div>
 </asp:Content>

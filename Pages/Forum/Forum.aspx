@@ -10,4 +10,14 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="NavigationContant" runat="server">
+    <div id="ForumBoard" class="cc">
+        <div class="ra">
+            <asp:TextBox runat="server" ID="SearchText" CssClass="searchText"></asp:TextBox>
+            <asp:ImageButton runat="server" ImageUrl="~/Resource/image/search.png" ID="Search" CssClass="search"/>
+        </div>
+        <hr style="width: 40vw;"/>
+        <div>
+            <span>暂无内容</span>
+        </div>
+    </div>
 </asp:Content>

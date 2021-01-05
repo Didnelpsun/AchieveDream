@@ -1,1 +1,38 @@
-﻿
+﻿.topButton {
+    position: fixed;
+    top: 18vh;
+    height: 50px;
+    border: 0px;
+    background-color: #030f62;
+    width: 150px;
+    color: white;
+    transform: translateX(-75px);
+}
+
+    .topButton:focus {
+        outline: none;
+        border: 0px;
+    }
+
+.top1{
+    left: 25vw;
+}
+
+.top2{
+    left: 50vw;
+}
+
+.top3{
+    left: 75vw;
+}
+
+#HomeBoard{
+    padding: 15px;
+}
+
+.mainBoard{
+    background-color:white;
+    width: 45vw;
+    padding: 15px;
+    margin: 10px 0 5px;
+}

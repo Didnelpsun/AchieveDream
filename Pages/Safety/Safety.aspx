@@ -9,7 +9,16 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="NavigationContant" runat="server">
-    <div id="SafetyBoard">
-
+    <div>
+        <div style="padding:15px;">
+            <span>当前用户名：</span>
+            <asp:Label runat="server" ID="UserName"></asp:Label>
+        </div>
+        <hr />
+         <asp:Button runat="server" Text="修改用户名" CssClass="clickCard"/>
+        <asp:Button runat="server" Text="修改密码" CssClass="clickCard"/>
+         <asp:Button runat="server" Text="更换绑定手机号" CssClass="clickCard"/>
+        <asp:Button runat="server" Text="注销账号" CssClass="clickCard"/>
+        <asp:Button runat="server" Text="退出当前登录账号" CssClass="clickCard"/>
     </div>
 </asp:Content>

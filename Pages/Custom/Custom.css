@@ -1,1 +1,36 @@
-﻿
+﻿#CustomBoard{
+    padding: 15px;
+}
+
+.clock{
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    top: 20vh;
+    right: 5vw;
+}
+
+    .clock:focus {
+        outline: none;
+        border: 0px;
+    }
+
+.searchText {
+    text-indent: 5px;
+    margin: 10px;
+    width: inherit;
+    outline-style: none;
+    border: 1px solid #aaa;
+    height: 30px;
+    border-radius: 0.1vw;
+}
+
+.search{
+    width:25px;
+    height: 25px;
+}
+
+    .search:focus {
+        outline: none;
+        border: 0px;
+    }

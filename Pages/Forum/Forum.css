@@ -1,1 +1,23 @@
-﻿
+﻿#ForumBoard{
+    padding: 15px;
+}
+
+.searchText {
+    text-indent: 5px;
+    margin: 10px;
+    width: inherit;
+    outline-style: none;
+    border: 1px solid #aaa;
+    height: 30px;
+    border-radius: 0.1vw;
+}
+
+.search {
+    width: 25px;
+    height: 25px;
+}
+
+    .search:focus {
+        outline: none;
+        border: 0px;
+    }
