@@ -1,0 +1,16 @@
+﻿.messageSwitch {
+    width: 25vw;
+    height: 50px;
+    border: 0px;
+    background-color: white;
+    font-size: 20px;
+    color: #409eff;
+}
+
+.notSelected {
+    background-color: #030f62;
+}
+
+.MessageContent {
+    padding: 15px;
+}

@@ -60,3 +60,9 @@
     overflow-y: auto;
     max-height: 75vh;
 }
+
+hr {
+    background-color: #ddd;
+    height: 1px;
+    border: none;
+}

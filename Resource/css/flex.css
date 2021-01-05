@@ -11,6 +11,12 @@
     align-items: center;
 }
 
+.cs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 .ra {
     display: flex;
     flex-direction: row;

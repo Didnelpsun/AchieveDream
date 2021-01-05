@@ -1,0 +1,43 @@
+﻿#PersonalDataBoard {
+    padding: 15px;
+}
+
+.inputLabel {
+    text-indent: 5px;
+}
+
+.inputText {
+    text-indent: 5px;
+    margin: 10px;
+    width: inherit;
+    outline-style: none;
+    border: 1px solid #aaa;
+    height: 30px;
+    border-radius: 0.1vw;
+}
+
+.inputMultText {
+    text-indent: 5px;
+    margin: 10px;
+    width: inherit;
+    outline-style: none;
+    border: 1px solid #aaa;
+    border-radius: 0.1vw;
+    height:75px;
+}
+
+.submit {
+    width: 15vw;
+    height: 45px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 0.1vw;
+    background-color: #21b702;
+    color: white;
+    border-style: none;
+}
+
+    .submit:focus {
+        outline: none;
+        border: 0px;
+    }
