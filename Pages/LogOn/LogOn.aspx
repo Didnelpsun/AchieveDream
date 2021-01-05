@@ -35,7 +35,7 @@
             <asp:Image runat="server" ImageUrl="/Resource/image/phone.png" CssClass="icon" />
             <asp:TextBox runat="server" ID="Telephone" CssClass="textBox" MaxLength="11"></asp:TextBox>
         </div>
-        <asp:Button runat="server" ID="Submit" CssClass="submit" Text="登录" OnClick="Submit_Click" />
+        <asp:Button runat="server" ID="Submit" CssClass="submit" Text="注册" OnClick="Submit_Click" />
     </div>
 
     <asp:Panel runat="server" Visible ="false" ID="AlertBoard" CssClass="alertBoard">
