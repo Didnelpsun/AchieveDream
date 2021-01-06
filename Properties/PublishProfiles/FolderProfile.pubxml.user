@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>E:\GitHub\AchieveDream\bin\app.publish\</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/AchieveDream.dll">
+      <publishTime>01/06/2021 12:41:24</publishTime>
+    </File>
+    <File Include="bin/AchieveDream.pdb">
+      <publishTime>01/06/2021 12:41:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>07/08/2020 21:52:58</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/19/2020 01:51:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/19/2020 01:51:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/19/2020 01:40:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/19/2020 01:52:16</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>05/19/2020 01:52:16</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/19/2020 01:40:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/19/2020 01:47:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/19/2020 01:51:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/19/2020 01:51:58</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/19/2020 01:49:16</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/19/2020 01:49:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/19/2020 01:50:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/19/2020 01:40:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>12/05/2017 01:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>12/05/2017 01:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>05/19/2020 01:40:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/19/2020 01:40:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Buffers.dll">
+      <publishTime>07/19/2017 17:01:28</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/15/2018 20:29:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Memory.dll">
+      <publishTime>04/17/2019 23:24:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Numerics.Vectors.dll">
+      <publishTime>07/19/2017 17:01:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/15/2018 20:29:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>11/15/2019 16:37:58</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>11/29/2018 23:39:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>06/18/2019 19:08:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/19/2020 01:50:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/19/2020 01:50:06</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/19/2020 01:40:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/19/2020 01:52:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/19/2020 01:52:02</publishTime>
+    </File>
+    <File Include="Data/Data.accdb">
+      <publishTime>01/06/2021 12:30:53</publishTime>
+    </File>
+    <File Include="Pages/Collection/Collection.aspx">
+      <publishTime>01/05/2021 23:33:07</publishTime>
+    </File>
+    <File Include="Pages/Collection/Collection.css">
+      <publishTime>01/05/2021 23:33:52</publishTime>
+    </File>
+    <File Include="Pages/Custom/Custom.aspx">
+      <publishTime>01/06/2021 01:25:11</publishTime>
+    </File>
+    <File Include="Pages/Custom/Custom.css">
+      <publishTime>01/06/2021 01:22:05</publishTime>
+    </File>
+    <File Include="Pages/Forum/Forum.aspx">
+      <publishTime>01/06/2021 01:41:38</publishTime>
+    </File>
+    <File Include="Pages/Forum/Forum.css">
+      <publishTime>01/06/2021 01:41:17</publishTime>
+    </File>
+    <File Include="Pages/Friends/Friends.aspx">
+      <publishTime>01/05/2021 21:30:12</publishTime>
+    </File>
+    <File Include="Pages/Friends/Friends.css">
+      <publishTime>01/05/2021 21:29:30</publishTime>
+    </File>
+    <File Include="Pages/Home/Home.aspx">
+      <publishTime>01/06/2021 02:09:45</publishTime>
+    </File>
+    <File Include="Pages/Home/Home.css">
+      <publishTime>01/06/2021 02:10:15</publishTime>
+    </File>
+    <File Include="Pages/LogIn/LogIn.aspx">
+      <publishTime>01/05/2021 01:20:58</publishTime>
+    </File>
+    <File Include="Pages/LogIn/LogIn.css">
+      <publishTime>12/22/2020 23:51:11</publishTime>
+    </File>
+    <File Include="Pages/LogOn/LogOn.aspx">
+      <publishTime>01/06/2021 02:25:59</publishTime>
+    </File>
+    <File Include="Pages/LogOn/LogOn.css">
+      <publishTime>12/22/2020 23:42:49</publishTime>
+    </File>
+    <File Include="Pages/Message/Message.aspx">
+      <publishTime>01/05/2021 23:32:56</publishTime>
+    </File>
+    <File Include="Pages/Message/Message.css">
+      <publishTime>01/05/2021 22:10:14</publishTime>
+    </File>
+    <File Include="Pages/Mine/Mine.aspx">
+      <publishTime>01/05/2021 19:53:09</publishTime>
+    </File>
+    <File Include="Pages/Mine/Mine.css">
+      <publishTime>01/06/2021 02:12:34</publishTime>
+    </File>
+    <File Include="Pages/PersonalData/PersonalData.aspx">
+      <publishTime>01/05/2021 19:53:16</publishTime>
+    </File>
+    <File Include="Pages/PersonalData/PersonalData.css">
+      <publishTime>01/05/2021 17:34:09</publishTime>
+    </File>
+    <File Include="Pages/Release/Release.aspx">
+      <publishTime>01/05/2021 23:38:32</publishTime>
+    </File>
+    <File Include="Pages/Release/Release.css">
+      <publishTime>01/05/2021 23:39:20</publishTime>
+    </File>
+    <File Include="Pages/Safety/Safety.aspx">
+      <publishTime>01/06/2021 00:42:43</publishTime>
+    </File>
+    <File Include="Pages/Safety/Safety.css">
+      <publishTime>01/06/2021 00:37:49</publishTime>
+    </File>
+    <File Include="Pages/Settings/Settings.aspx">
+      <publishTime>01/06/2021 00:33:28</publishTime>
+    </File>
+    <File Include="Pages/Settings/Settings.css">
+      <publishTime>01/06/2021 00:32:48</publishTime>
+    </File>
+    <File Include="README.md">
+      <publishTime>01/05/2021 00:23:59</publishTime>
+    </File>
+    <File Include="Resource/css/alert.css">
+      <publishTime>12/24/2020 22:44:28</publishTime>
+    </File>
+    <File Include="Resource/css/flex.css">
+      <publishTime>01/05/2021 17:04:55</publishTime>
+    </File>
+    <File Include="Resource/icon.ico">
+      <publishTime>12/15/2020 15:42:14</publishTime>
+    </File>
+    <File Include="Resource/image/clear.png">
+      <publishTime>12/18/2020 23:47:51</publishTime>
+    </File>
+    <File Include="Resource/image/confirm.png">
+      <publishTime>12/22/2020 23:04:48</publishTime>
+    </File>
+    <File Include="Resource/image/custom/clock.png">
+      <publishTime>01/06/2021 00:48:49</publishTime>
+    </File>
+    <File Include="Resource/image/eye-close.png">
+      <publishTime>12/15/2020 15:42:14</publishTime>
+    </File>
+    <File Include="Resource/image/eye-open.png">
+      <publishTime>12/15/2020 15:42:14</publishTime>
+    </File>
+    <File Include="Resource/image/id-card.png">
+      <publishTime>12/22/2020 23:11:15</publishTime>
+    </File>
+    <File Include="Resource/image/job.png">
+      <publishTime>12/22/2020 23:13:57</publishTime>
+    </File>
+    <File Include="Resource/image/message.png">
+      <publishTime>12/15/2020 15:42:14</publishTime>
+    </File>
+    <File Include="Resource/image/mine/refresh.png">
+      <publishTime>01/05/2021 21:16:37</publishTime>
+    </File>
+    <File Include="Resource/image/mine/个人资料.png">
+      <publishTime>01/05/2021 00:53:56</publishTime>
+    </File>
+    <File Include="Resource/image/mine/发布.png">
+      <publishTime>01/05/2021 00:46:03</publishTime>
+    </File>
+    <File Include="Resource/image/mine/好友.png">
+      <publishTime>01/05/2021 00:52:12</publishTime>
+    </File>
+    <File Include="Resource/image/mine/收藏.png">
+      <publishTime>01/05/2021 00:44:16</publishTime>
+    </File>
+    <File Include="Resource/image/mine/消息.png">
+      <publishTime>01/05/2021 00:50:11</publishTime>
+    </File>
+    <File Include="Resource/image/mine/设置.png">
+      <publishTime>01/05/2021 00:51:04</publishTime>
+    </File>
+    <File Include="Resource/image/mine/账号安全.png">
+      <publishTime>01/05/2021 00:42:55</publishTime>
+    </File>
+    <File Include="Resource/image/password.png">
+      <publishTime>12/15/2020 15:42:14</publishTime>
+    </File>
+    <File Include="Resource/image/phone.png">
+      <publishTime>12/15/2020 15:42:14</publishTime>
+    </File>
+    <File Include="Resource/image/search.png">
+      <publishTime>01/06/2021 01:07:00</publishTime>
+    </File>
+    <File Include="Resource/image/user.png">
+      <publishTime>12/15/2020 15:42:14</publishTime>
+    </File>
+    <File Include="Templates/Basic/Basic.css">
+      <publishTime>12/16/2020 14:39:52</publishTime>
+    </File>
+    <File Include="Templates/Basic/Basic.Master">
+      <publishTime>01/05/2021 01:23:20</publishTime>
+    </File>
+    <File Include="Templates/Navigation/Navigation.css">
+      <publishTime>01/06/2021 01:04:52</publishTime>
+    </File>
+    <File Include="Templates/Navigation/Navigation.master">
+      <publishTime>01/05/2021 01:27:27</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/06/2021 12:41:25</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

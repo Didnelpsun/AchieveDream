@@ -26,6 +26,7 @@ namespace AchieveDream
             string message = "";
             string comfirmWord = "";
             OleDbConnection connection = Connection.Conn;
+            connection.Close();
             try
             {
                 connection.Open();
